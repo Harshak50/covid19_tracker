@@ -199,27 +199,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     )),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: Align(
-                alignment: Alignment.bottomCenter,
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: SizedBox(
-                    height: size.height * 0.46,
-                    child: GoogleMap(
-                      myLocationEnabled: true,
-                      zoomControlsEnabled: false,
-                      myLocationButtonEnabled: false,
-                      mapType: MapType.hybrid,
-                      initialCameraPosition: CameraPosition(
-                          target: initialCameraPosition, zoom: 4),
-                      // onMapCreated: _onMapCreated,
-                    ),
-                  ),
-                ),
-              ),
-            ),
+           
           ],
         ),
       ),
